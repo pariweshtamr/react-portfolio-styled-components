@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import Home from './pages/Home'
+import LightDarkMode from './components/LightDarkMode/LightDarkMode';
+import MenuIcon from '@material-ui/icons/Menu';
+import { IconButton } from '@material-ui/core';
+import { useState } from 'react';
+
 
 function App() {
+  const [navToggle, setNavToggle] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="hamburger-menu">
+      <IconButton onClick={()=>setNavToggle(!navToggle)}>
+        <MenuIcon />
+      </IconButton>
     </div>
+    <Sidebar navToggle={navToggle} />
+    <LightDarkMode />
+    <Home />
+    </>
   );
 }
 
