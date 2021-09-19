@@ -5,7 +5,7 @@ export const TimelineContentStyled = styled.div`
     margin-bottom: 2rem;
     .left-content{
         padding-left: 20px;
-        width: 20%;
+        width: 30%;
         position: relative;
         &::before{
             content: "";
@@ -29,6 +29,7 @@ export const TimelineContentStyled = styled.div`
     }
     .right-content{
         padding-left: 4.5rem;
+        width: 70%;
         position: relative;
         &::before{
             content: "";
@@ -54,6 +55,7 @@ export const TimelineContentStyled = styled.div`
         p{
             font-size: 0.9rem;
             color: var(--font-color-dark);
+            margin-bottom: 1rem;
         }
     }
 `

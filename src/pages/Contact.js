@@ -44,7 +44,7 @@ function Contact() {
                     </form>
                 </div>
                 <div className="right-content">
-                    <ContactItem title={'Phone'} icon={phone} contact={'+61 478257845'} />
+                    <ContactItem title={'Phone'} icon={phone} contact={'+61 *** *** ***'} />
                     <ContactItem title={'E-mail'} icon={email} contact={'tamrpariwesh@gmail.com'} />
                     <ContactItem title={'Address'} icon={location} contact={'Sydney, Australia'} />
                 </div>

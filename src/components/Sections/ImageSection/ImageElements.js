@@ -30,6 +30,7 @@ export const ImageStyled = styled.div`
         .paragraph{
                 padding: 1rem 0;
                 font-size: 1rem;
+                line-height: 2;
                 color: var(--font-color-dark);
             }
         .about-info{
